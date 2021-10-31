@@ -1,4 +1,3 @@
-# 
 # Hbin's Technical Side
 ## 1.Programming 
 This site is used for all usefull programing notes.
