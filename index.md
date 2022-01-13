@@ -28,6 +28,7 @@ class Job
 		void do_someotherthing();
 }
 
+[Smart Pointer](CPP/STD/SmartPointer/smart_pointer.md)
 
 ```
 
