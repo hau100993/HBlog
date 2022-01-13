@@ -28,9 +28,9 @@ class Job
 		void do_someotherthing();
 }
 
-[Smart Pointer](CPP/STD/SmartPointer/smart_pointer.md)
-
 ```
+
+1. [Smart Pointer](CPP/STD/SmartPointer/smart_pointer.md)
 
 ## 2. Technical Note
 This site is used for all usefull techinal notes.
