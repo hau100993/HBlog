@@ -1,44 +1,19 @@
 # Hbin's Technical Side
-## 1.Programming 
+
+## Site Map 
+## Introduce 
+### Programming 
 This site is used for all usefull programing notes.
-for example 
 
-```C++
+1. Programming
 
-# Singleton template
+1.CPP
+ 
+1.1 Design Pattern
+1. [Signleton](Programming/CPP/Design_Pattern/singleton.md)
 
-class Job 
-{
-	private:
-		//private contructor 
-		Job() {};
-	public: 
-		~Job() {};
-		static inline Job* get_instanace()
-		{
-			static Job* p_Job = nullptr;
-			if (p_Job == nullptr)
-			{
-				p_Job = new Job();
-			}
-			return p_Job;
-		}
-		
-		void do_something(); 
-		void do_someotherthing();
-}
+1.2 STD
+1. [Smart_Pointer](Programming/CPP/STD/SmartPointer/smart_pointer.md)
 
-```
-
-1. [Smart Pointer](CPP/STD/SmartPointer/smart_pointer.md)
-
-## 2. Technical Note
-This site is used for all usefull techinal notes.
-for example
-```sh
-#Git rebase; 
-git checkout <feature_branch>
-git rebase -i origin/master
-```
-
-
+### Programing Tools
+This site is used for all usefull programing notes.
