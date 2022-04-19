@@ -1,8 +1,10 @@
 # 1. Vector 
 
-1.1 Describe 
+1. Describe
 
-1.1 Declare Syntax 
+    Dynamic array   
+
+2. Declare Syntax 
 
 ```c++
 
@@ -17,7 +19,8 @@ std::vector <int> v3(10, 5);// vector of int with 10 elements (all =  5)
 std::vector <int> v4[10]; // an ARRAY of 10 vector type int !!!
 
 ```
-1.1 Importance functions
+
+1. Importance functions
 
 ```c++
 v.push_back(x); // O(1): Insert to the end of vector
