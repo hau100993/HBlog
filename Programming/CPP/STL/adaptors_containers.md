@@ -1,13 +1,13 @@
 <p style="text-align:center;">
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png"
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png"
 alt="drawing" width="250"/>
 </p>
 
-- [1. Array](#1-array)
-- [2. Vector](#2-vector)
-- [3. Dequeue (Double Ended Queue )](#3-dequeue-double-ended-queue-)
+- [1. stack](#1-stack)
+- [2. queue](#2-queue)
+- [3. priority queue](#3-priority-queue)
 
-# 1. Array
+# 1. stack
 
 1. Describe
 
@@ -36,7 +36,7 @@ arr2.empty()
 
 ```
 ---
-# 2. Vector
+# 2. queue
 
 1. Describe
 
@@ -97,7 +97,7 @@ include <vector>
 ```
 ---
 
-# 3. Dequeue (Double Ended Queue )
+# 3. priority queue
 
 1. Describe
 

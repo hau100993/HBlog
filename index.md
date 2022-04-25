@@ -1,12 +1,17 @@
-<img class="center" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="drawing" width="150" />
+
+<p style="text-align:center;">
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="drawing" width="300"/>
+</p>
 
 # Hbin's Technical Side
 
-## Introduce
-## 1. Programming
-This site is used for all useful programing notes.
+This site is my personal page which uses to store all working note while learning and working.
 
-### A. CPP Programming
+
+## 1. Programming Languges (C/C++)
+_This section to store some useful programing notes._
+
+### A. C++ and 0OP
 
 
 #### 1. Design Pattern
@@ -23,4 +28,4 @@ This site is used for all useful programing notes.
 
 
 ### B. Programing Tools
-This site is used for all useful programing notes.
+_This section to store some useful programing notes._

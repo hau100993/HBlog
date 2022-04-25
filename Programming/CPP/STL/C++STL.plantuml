@@ -1,6 +1,6 @@
 
 
-' @startmindmap
+' @startuml
 ' * Debian
 ' ** Ubuntu
 ' *** Linux Mint
@@ -13,10 +13,9 @@
 ' ** Raspbian with a very long name
 ' *** <s>Raspmbc</s> => OSMC
 ' *** <s>Raspyfi</s> => Volumio
-' @endmindmap
+' @enduml
 
 @startuml
-
-A -> B : get_hello()
+A->B: C
 
 @enduml
