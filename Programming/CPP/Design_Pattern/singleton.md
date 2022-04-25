@@ -1,16 +1,23 @@
-# Singleton 
+<p style="text-align:center;">
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="drawing" width="150"/>
+</p>
 
-## Introduce
+
+# Singleton
+
+### Introduce
+
+_to be update_
 
 ## Code template
 
 ```c++
-class Job 
+class Job
 {
 	private:
-		//private contructor 
+		//private contructor
 		Job() {};
-	public: 
+	public:
 		~Job() {};
 		static inline Job* get_instanace()
 		{
@@ -21,8 +28,8 @@ class Job
 			}
 			return p_Job;
 		}
-		
-		void do_something(); 
+
+		void do_something();
 		void do_someotherthing();
 }
 
