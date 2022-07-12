@@ -141,19 +141,12 @@ include <vector>
 
 3. Compare std::map vs std::unoerdered_map
 
-                 | map             | unordered_map
----------------------------------------------------------
-Ordering        | increasing  order   | no ordering
-                | (by default)        |
-
-Implementation  | Self balancing BST  | Hash Table
-                | like Red-Black Tree |  
-
-search time     | log(n)              | O(1) -> Average 
-                |                     | O(n) -> Worst Case
-
+Action          | std::map             | std::unordered_map
+:--- | :---| ---
+Ordering        | increasing  order (by default)  | no ordering
+Implementation  | Self balancing BST like Red-Black Tree | Hash Table
+search time     | log(n)              | O(1) -> Average. O(n) -> Worst Case
 Insertion time  | log(n) + Rebalance  | Same as search
-                      
 Deletion time   | log(n) + Rebalance  | Same as search
 
 
