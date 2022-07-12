@@ -113,50 +113,49 @@ include <vector>
 
 /* 1. Declare Syntax  */
 {
-    //correct
-    vector <int> v1;       // empty vector of int
-    vector <int> v2(10);   // vector of int with 10 elements (all =  0)
-    vector <int> v3(10, 5);// vector of int with 10 elements (all =  5)
-    vector <char> v4{'H', 'e', 'l', 'l', 'o'}; // declare and init with value
-
-    // wrong:
-    vector <int> v4[10]; // an ARRAY of 10 vector type int !!!
+     std::unordered_map<int, int> order;
 
 }
 
 /* 2. Copy Vector*/
 {
-    vector<char> v1{'H', 'e', 'l', 'l', 'o', '\n'};
-    vector<char> v1_copy1(v1); // copy by constructor
-    vector<char> v1_copy2 = v1; // copy by = operator
+
 }
 
 
 /* 3. Importance functions */
 {
-    v.push_back(x); v.push_front()  ; // O(1): Insert to the end of vector
-    v.pop_back();   v.pop_front()   ; // O(1): erase the last element
-    v.font();       // O(1): get element at front
-    v.back();       // O(1): get element at back
-    v.clear();      // O(n): erase all elements
-    v.size();       // O(1): get size
-    v[10];          // O(1): access the element at index 10
+
 }
 
 
 /* 4. Iterator */
 
-    for (auto i : v1)
-    {
-        cout << i<< " ";
-    }
+
 
 
 /* 5. Advance */
 
-    // sort
-    sort(v1.begin(), v2.end());
 
 ```
+
+3. Compare std::map vs std::unoerdered_map
+
+                 | map             | unordered_map
+---------------------------------------------------------
+Ordering        | increasing  order   | no ordering
+                | (by default)        |
+
+Implementation  | Self balancing BST  | Hash Table
+                | like Red-Black Tree |  
+
+search time     | log(n)              | O(1) -> Average 
+                |                     | O(n) -> Worst Case
+
+Insertion time  | log(n) + Rebalance  | Same as search
+                      
+Deletion time   | log(n) + Rebalance  | Same as search
+
+
 
 # 4. unordered_multimap
