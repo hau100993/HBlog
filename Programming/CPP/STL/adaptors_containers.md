@@ -10,29 +10,34 @@ alt="drawing" width="250"/>
 # 1. stack
 
 1. Describe
-
-    *Container that encapsulates fixed size arrays.*
+    * std::stack is container apdater which implements stack
+    * Internally it use std::dequeu
+    * LIFO: Last in, First out
+    * Allow to push(insert) and pop(remove) only from top
 
 2. Common Syntax and Usage
-
+    * Init: 
+        + `std::stack<T> my_stack`; 
+        + `st::stack<T> my_stack(container)`;  // container: list, vector, deque
+    * `empty()`: Check empty or not - O(1)
+    * `size()`: Return size of stack - O(1)
+    * `top()`: Return refernece (*iterator) to the top of stakk - O(1)
+    * `push(e)`: Insert e to the top of stack - O(1)
+    * `pop()`: Remote the last element (in top) - O(1)
+ 
 ```c++
-include <array>
+void testStack()
+{
+    std::deque<int> d_queue{1,2,3,4,5};
+    std::stack<int> s_stack(d_queue); // can init by container
+    
+    while(!s_stack.empty())
+    {
+        std::cout << s_stack.top() << " \n";
+        s_stack.pop();
 
-
-/* 1. Declare Syntax  */
-
-array<int, 5> arr1 {1,3,5,2,4};  //double-brace require
-array<char, 5> arr2 = {'h', 'e', 'l', 'l', 'o'};
-
-
-/* 3. Importance functions */
-arr2.size();        // O(1): get size
-arr2.fill(10)       // O(n): filling array with 10;
-arr2.at(5)          // O(1): access the element at index 5
-arr2[5]             // O(1): access the element at index 5
-arr2.size()
-arr2.empty()
-
+    }
+}
 
 ```
 ---

@@ -3,13 +3,14 @@
 #include <vector>
 #include <array>
 #include <deque>
+#include <list>
 
 #include <string>
 #include <algorithm>
 
 using namespace std;
 
-void test_dequeu()
+void test_deque()
 {
     deque<int> d1;
 
@@ -60,10 +61,38 @@ void test_vector()
         cout << x;
 }
 
+void testStack()
+{
+    std::deque<int> d_queue{1,2,3,4,5};
+    std::stack<int> s_stack(d_queue); // can init by container
+    
+    while(!s_stack.empty())
+    {
+        std::cout << s_stack.top() << " \n";
+        s_stack.pop();
+
+    }
+}
+
+void testList()
+{
+    std::list<int> m_list = {1,2,3,4,5};
+    // list<int>::interator* it = m_list.begin();
+    auto it = m_list.begin();
+     
+    for (auto it : m_list)
+    {
+        std::cout << it <<" ";
+    }
+    std::cout << "\n";
+}
+
+
+
 int main()
 {
     // test_vector();
-    test_dequeu();
+    test_deque();
 
     return 0;
 }
