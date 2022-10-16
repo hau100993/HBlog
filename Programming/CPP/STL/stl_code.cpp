@@ -76,16 +76,22 @@ void testStack()
 
 void testList()
 {
-    std::list<int> m_list = {1,2,3,4,5};
+    std::list<int> m_list = {0,1,2,3,4,5,6,7,8,9};
     // list<int>::interator* it = m_list.begin();
     auto it = m_list.begin();
-     
+    // advance(it, 5);
+    m_list.erase(it);
+    auto it2 = m_list.begin();
+    
+    m_list.insert(it2, 10);
     for (auto it : m_list)
-    {
-        std::cout << it <<" ";
+    {   if(it == 10)
+        {
+            std::cout << "found :" << it << "\n";
+        }
+        
     }
-    std::cout << "\n";
-}
+    
 
 
 
