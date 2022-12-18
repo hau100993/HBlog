@@ -4,6 +4,12 @@
 alt="drawing" width="250"/>
 </p>
 
+- [File IO](#file-io)
+- [Common functions](#common-functions)
+  - [Code Syntax](#code-syntax)
+- [Example Exercise](#example-exercise)
+
+
 # File IO 
 
 # Common functions 
@@ -131,9 +137,6 @@ fclose(fp);  // Code is missing this
 
 
 
-
-
 ```
 
-# Example
 
