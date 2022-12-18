@@ -60,3 +60,23 @@ std::shared_ptr<Entity> sharedpEntity = std::make_shared<Entity>("sharedpointer"
 copy_shared = sharedpEntity ; // at this time, ref counter is increase 1
 
 ```
+
+- Example:  with function pointer: 
+
+```
+typedef std::function<void (int&)> funcClb; 
+
+void SetValue(int& a)
+{
+    std::cout << "Value : " << a << "\n";
+}
+
+std::shared_ptr<funcClb> ptr2 = std::make_shared<funcClb>(SetValue);
+
+    if (ptr2)
+    {
+      int i = 10;
+      (*ptr2)(i);      
+    }
+
+```

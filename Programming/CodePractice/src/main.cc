@@ -11,6 +11,6 @@ using namespace std;
 
 int main()
 {
-    ThreadEx newJob; 
-    newJob.start(10);
+    // ThreadEx newJob; 
+    // newJob.start(10);
 }
