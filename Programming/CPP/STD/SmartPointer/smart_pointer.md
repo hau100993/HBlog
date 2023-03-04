@@ -6,6 +6,8 @@ auto call destructor when out scope, can not share
 ### Syntax: 
   
  ```c++
+#include <>
+
 std::unique_ptr<Entity> pEntity1(new Entity(20));
 std::unique_ptr<Entity> pEntity2 = std::make_unique<Entity>(20));
 

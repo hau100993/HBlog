@@ -4,6 +4,8 @@
 #include <deque>
 #include <string>
 #include <algorithm>
+#include <festival.h>
+
 
 #pragma once
 
@@ -22,4 +24,15 @@ public:
     Timer() = default;
     void reset();
     double elapsed() const;
+};
+
+class OtherFunction 
+{
+public: 
+    OtherFunction() = default; 
+    ~OtherFunction() = default; 
+private: 
+
+    void TestVoice();
+
 };
