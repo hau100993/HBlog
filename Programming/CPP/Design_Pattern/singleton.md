@@ -1,11 +1,11 @@
 <p style="text-align:center;">
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="drawing" width="150"/>
+<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="drawing" width="250"/>
 </p>
 
 
 # Singleton
 
-### Introduce
+## Introduce
 
 _to be update_
 
