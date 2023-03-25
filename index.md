@@ -13,7 +13,7 @@ _This section to store some useful programing notes._
 
 ### 1. Design Pattern
 
-[Design Patterns](Programming\CPP\Design_Pattern\All_Design_Patterns.md)
+[Design Patterns](Programming/CPP/Design_Pattern/all_design_patterns.md)
 
 ### 2. STL Container
 

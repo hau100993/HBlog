@@ -9,11 +9,17 @@
 - [Structural Design Patterns](#structural-design-patterns)
   - [Adapter](#adapter)
   - [Facade](#facade)
-- [Composition](#composition)
+  - [Composition](#composition)
 - [Behavioral Design Patterns](#behavioral-design-patterns)
   - [State](#state)
   - [Chain of Responsibility](#chain-of-responsibility)
   - [Template Method](#template-method)
+
+
+
+<p style="text-align:center;">
+<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd70dd65e-c070-44e8-87aa-91b3c91b7cd1_1226x1610.png" alt="drawing" width="300"/>
+</p>
 
 
 # Creation 
@@ -33,7 +39,7 @@
 
 ## Facade 
 
-# Composition 
+## Composition 
 
 # Behavioral Design Patterns 
 
