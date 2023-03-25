@@ -1,57 +1,84 @@
-<p style="text-align:center;">
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.pn" alt="drawing" width="300"/>
-</p>
+# Smart Pointer
 
-- [Creation](#creation)
-  - [Singleton](#singleton)
-  - [Factory and Abstract Factory](#factory-and-abstract-factory)
-  - [Builder](#builder)
-- [Structural Design Patterns](#structural-design-patterns)
-  - [Adapter](#adapter)
-  - [Facade](#facade)
-  - [Composition](#composition)
-- [Behavioral Design Patterns](#behavioral-design-patterns)
-  - [State](#state)
-  - [Chain of Responsibility](#chain-of-responsibility)
-  - [Template Method](#template-method)
+## 1. std::unique_ptr
+auto call destructor when out scope, can not share
+
+### Syntax: 
+  
+ ```c++
+#include <>
+
+std::unique_ptr<Entity> pEntity1(new Entity(20));
+std::unique_ptr<Entity> pEntity2 = std::make_unique<Entity>(20));
 
 
-<p style="text-align:center;">
-<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd70dd65e-c070-44e8-87aa-91b3c91b7cd1_1226x1610.png" alt="drawing" width="300"/>
-</p>
+```
+
+### Usefull Coding Note: 
+
+* Change void* ptr <==> unique_ptr
+
+```C++
+// change ownership to another ptr
+std::unique_ptr<Entity> pEntity2(pEntity2.release(())
 
 
-# Creation 
+// change void* to unique_ptr
 
-## Singleton 
+auto p_to_int = new int; 
+void* p_to_void = static_cat<void*>(p_to_int);
 
+auto smart_p_to_int =  std::unique_ptr<int>(p_to_void);
 
-## Factory and Abstract Factory 
-
-
-## Builder 
-
-
-
-# Structural Design Patterns
-## Adapter 
-
-## Facade 
-
-## Composition 
-
-# Behavioral Design Patterns 
+// TODO: need to test
+// change  with dymanic cast
+auto smart_p_to_int =  std::unique_ptr<int>(dymanic_cast<int*>(p_to_void.release()))
 
 
-## State 
+
+```
 
 
-## Chain of Responsibility 
 
-## Template Method
 
-- Pseudocode 
 
-<p style="text-align:center;">
-<img src="https://refactoring.guru/images/patterns/diagrams/template-method/example.png?id=c0ce5cc8070925a1cd345fac6afa16b6" alt="drawing" width="300"/>
-</p>
+
+## 2. std::weak_ptr
+- do not increase ref counter, usefull to check validity of the data by calling expired() or lock().
+
+```c++
+std::shared_ptr<Entity> sharedpEntity = std::make_shared<Entity>("sharedpointer");
+std::weak_ptr<Entity> weakpEntity = sharedpEntity;
+```
+## Example
+
+
+
+## 3. std::shared_ptr
+
+```
+std::shared_ptr<Entity> copy_shared; 
+std::shared_ptr<Entity> sharedpEntity = std::make_shared<Entity>("sharedpointer");
+copy_shared = sharedpEntity ; // at this time, ref counter is increase 1
+
+```
+
+- Example:  with function pointer: 
+
+```
+typedef std::function<void (int&)> funcClb; 
+
+void SetValue(int& a)
+{
+    std::cout << "Value : " << a << "\n";
+}
+
+std::shared_ptr<funcClb> ptr2 = std::make_shared<funcClb>(SetValue);
+
+    if (ptr2)
+    {
+      int i = 10;
+      (*ptr2)(i);      
+    }
+
+```

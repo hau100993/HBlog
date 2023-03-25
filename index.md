@@ -13,7 +13,7 @@ _This section to store some useful programing notes._
 
 ### 1. Design Pattern
 
-[Design Patterns](Programming/CPP/STD/SmartPointer/smart_pointer.md)
+[Design Patterns](Programming/CPP/Design_Pattern/All_Design_Patterns.md)
 
 ### 2. STL Container
 
