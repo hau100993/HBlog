@@ -3,7 +3,7 @@
 <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="drawing" width="300"/>
 </p>
 
-# Hbin's Technical Side
+# Hbin's Personal NoteBook Page
 
 This site is my personal page which uses to store all working note while learning and working.
 
