@@ -4,8 +4,12 @@
 #include <deque>
 #include <string>
 #include <algorithm>
-#include "ThreadEx.h"
 #include <thread>
+
+#include "./lib/Thread/ThreadEx.h"
+#include "./lib/Utils/UtilityModules.h"
+#include "./lib/stl_container.h"
+
 
 using namespace std;
 
@@ -21,7 +25,6 @@ using namespace std;
 //         std::this_thread::sleep_for(1s);
 // }
 
-
 int main()
 {
     ThreadEx newJob;
@@ -36,6 +39,15 @@ int main()
 
     // std::cin.get(); // waiting to press ENTER
 
+/* ================================= */
+/*  Timer mTimer;
+    mTimer.testPrint();
+    return 0; 
+    
+*/
 
-    return 0;
+
+/* ================================= */
+    test_priority_queue();
+
 }

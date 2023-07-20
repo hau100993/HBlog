@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/HauNguyen/Learning/Code/blog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  -std=c++14 -g -o CMakeFiles\\util_libary.dir\\lib\\Thread\\ThreadEx.cpp.obj -c D:\\HauNguyen\\Learning\\Code\\blog\\Programming\\CodePractice\\lib\\Thread\\ThreadEx.cpp",
+  "file": "D:\\HauNguyen\\Learning\\Code\\blog\\Programming\\CodePractice\\lib\\Thread\\ThreadEx.cpp",
+  "output": "CMakeFiles\\util_libary.dir\\lib\\Thread\\ThreadEx.cpp.obj"
+},
+{
+  "directory": "D:/HauNguyen/Learning/Code/blog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  -std=c++14 -g -o CMakeFiles\\util_libary.dir\\lib\\Utils\\UtilityModules.cpp.obj -c D:\\HauNguyen\\Learning\\Code\\blog\\Programming\\CodePractice\\lib\\Utils\\UtilityModules.cpp",
+  "file": "D:\\HauNguyen\\Learning\\Code\\blog\\Programming\\CodePractice\\lib\\Utils\\UtilityModules.cpp",
+  "output": "CMakeFiles\\util_libary.dir\\lib\\Utils\\UtilityModules.cpp.obj"
+},
+{
+  "directory": "D:/HauNguyen/Learning/Code/blog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  -std=c++14 -g -o CMakeFiles\\minicode.dir\\main.cpp.obj -c D:\\HauNguyen\\Learning\\Code\\blog\\Programming\\CodePractice\\main.cpp",
+  "file": "D:\\HauNguyen\\Learning\\Code\\blog\\Programming\\CodePractice\\main.cpp",
+  "output": "CMakeFiles\\minicode.dir\\main.cpp.obj"
+}
+]

@@ -3,6 +3,7 @@
 #include <vector>
 #include <array>
 #include <deque>
+#include <queue>
 
 #include <string>
 #include <algorithm>
@@ -58,4 +59,23 @@ void test_vector()
 
     for (char x : v1)
         cout << x;
+}
+
+void test_priority_queue()
+{
+    int arr[] = {1,2,3,6, 10, 7, 8, 6, 10,20};
+    std::priority_queue<int> pqueue; 
+
+    for (auto &i : arr)
+    {
+        pqueue.push(i);
+    }
+
+    std::cout << "Value in priority queue:" << "\n";
+    auto tmp = pqueue;
+    while( !tmp.empty())
+    {
+        std::cout << tmp.top() << " ";
+        tmp.pop();
+    }
 }

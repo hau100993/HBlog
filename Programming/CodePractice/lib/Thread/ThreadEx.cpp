@@ -3,13 +3,13 @@
 #include <chrono>
 #include <thread>
 #include <future>
-
 #include "ThreadEx.h"
-using namespace std::chrono_literals; 
+
+using namespace std::chrono_literals;
 
 /* 
 TODO : 
-+ issue 1: can not pass paramenter to job 
++ issue 1: can not pass parameter to job 
     std::thread t1(&this->job, params);
 
  */

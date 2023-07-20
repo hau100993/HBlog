@@ -1,4 +1,6 @@
 {
     "plantuml.server": "https://www.plantuml.com/plantuml",
     "plantuml.render": "PlantUMLServer",
+    "cmake.sourceDirectory": "D:/HauNguyen/Learning/Code/blog/Programming/CodePractice",
+    "C_Cpp.errorSquiggles": "disabled",
 }

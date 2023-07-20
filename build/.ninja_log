@@ -1,0 +1,6 @@
+# ninja log v5
+8	1991	7047090251317197	CMakeFiles/minicode.dir/main.cpp.obj	50c1baa2beb2b5ae
+1993	3067	7047090259347088	D:/HauNguyen/Learning/Code/blog/Programming/CodePractice/build/minicode.exe	3af05e1abd1fafbb
+10	2480	7046213058621158	CMakeFiles/util_libary.dir/lib/Thread/ThreadEx.cpp.obj	dd5111c27d1f2c3b
+2480	3350	7046213066955439	D:/HauNguyen/Learning/Code/blog/Programming/CodePractice/build/libutil_libary.a	282da7fbd1ed1bd6
+15	1814	7046213051046481	CMakeFiles/util_libary.dir/lib/Utils/UtilityModules.cpp.obj	22c0525a0c6d4ae1
