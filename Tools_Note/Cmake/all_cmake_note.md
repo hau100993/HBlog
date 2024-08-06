@@ -57,10 +57,21 @@
 
 * `ExternalProject_Add`
 
-  The ExternalProject_Add command is used to download, configure, build, and install external projects during the CMake build process.
+  `ExternalProject_Add`  is a CMake command used to define and manage external projects in your CMake build. An external project refers to a project that is separate from the current project you are building but is necessary for your project to function correctly. With ExternalProject_Add, you can download, configure, build, and install these external projects as part of your CMake build process.
 
   ```cmake
-  
+    ExternalProject_Add(<project_name>
+    PREFIX <prefix_dir>
+    URL <url>
+    [CMAKE_ARGS <args>...]
+    [DOWNLOAD_DIR <download_dir>]
+    [DOWNLOAD_NAME <download_name>]
+    [SOURCE_DIR <source_dir>]
+    [BINARY_DIR <binary_dir>]
+    [INSTALL_DIR <install_dir>]
+    [STEP_TARGETS <step_targets>...]
+)
+
   
   ```
 
